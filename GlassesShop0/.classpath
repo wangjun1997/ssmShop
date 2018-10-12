@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/spring-webmvc-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/asm-3.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/aspectjweaver-1.6.8.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/cglib-2.2.2.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/ecj-3.12.3.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/mybatis-3.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/mybatis-spring-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/mysql-connector-java-5.1.17.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/spring-aop-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/spring-asm-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/spring-aspects-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/spring-beans-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/spring-context-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/spring-context-support-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/spring-core-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/spring-expression-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/spring-jdbc-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/spring-tx-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/spring-web-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-annotations-api-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-api-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-catalina-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-catalina-ant-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-catalina-ha-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-coyote-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-dbcp-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-el-api-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-i18n-es-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-i18n-fr-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-i18n-ja-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-jasper-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-jasper-el-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-jaspic-api-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-jdbc-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-jni-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-jsp-api-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-juli-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-servlet-api-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-storeconfig-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-tribes-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-util-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-util-scan-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-websocket-8.5.32.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Tencent Files/279078543/FileRecv/lib/tomcat-websocket-api-8.5.32.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

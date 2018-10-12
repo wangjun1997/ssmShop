@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="
+     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+     http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+     http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+     http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+     http://www.springframework.org/schema/mvc
+	 http://www.springframework.org/schema/mvc/spring-mvc.xsd"
+	default-autowire="byType">
+	<context:component-scan base-package="edu.hbuas.GlassesShop.control"></context:component-scan>
+	 <context:component-scan base-package="edu.hbuas.GlassesShop.model"></context:component-scan>
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+	<!-- 配置spring扫描controller（等同于struts的action）包 -->
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	<!-- 视图名称的解析 -->
+	
+	  <!-- 访问静态资源 -->
+   <!--  <mvc:resources location="/images" mapping="/images/**"/>
+    <mvc:resources location="/css" mapping="/css/**"/>
+    <mvc:resources location="/js" mapping="/js/**"/> -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+		p:viewClass="org.springframework.web.servlet.view.JstlView" p:prefix="/"
+		p:suffix=".jsp" />
+	<mvc:annotation-driven>
+		<!-- 配置返回类型 -->
+		<mvc:message-converters register-defaults="true">
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<property name="supportedMediaTypes">
+					<list>
+						<value>text/plain;charset=UTF-8</value>
+						<value>text/html;charset=UTF-8</value>
+					</list>
+				</property>
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+	<!-- 对dataSource进行事务管理 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<!-- dataSource属性是必须的 -->
+		<property name="dataSource" ref="dataSource"></property>
+		
+    
+	</bean>
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="password" value="root" />
+		<property name="username" value="123456" />
+		<property name="url"
+			value="jdbc:mysql://127.0.0.1:3306/SHOP?characterEncoding=UTF-8" />
+	</bean>
+	<!-- 用SqlSessionFactoryBean来替代SqlSessionFactoryBuilder 返回一个DefaultSqlSessionFactory的实例 -->
+	 <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		
+	</bean> 
+	<!-- 声明一个SqlSessionTemplate,它是DefaultSqlSession的替代器 -->
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory" />
+	</bean>
+</beans>
+
+ 
